@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width:device-width, initial-scale=1"> -->
+        <title>PDF to WORD Converter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body style="background-color:#f7d1c3">
+
+        <center>
+        <div style="text-align:center;">
+            <div class="w3-xxlarge w3-card w3-hover-shadow w3-animate-opacity" style=" padding:10px; background-color: #ff0000; color: white; border-radius: 10px; width: 500px; margin-bottom:90px; margin-top:100px; margin-left:600px;">
+                <p> PDF to WORD Converter </p>
+            </div> 
+        </div> 
+    </center>
+        
+    <div style="text-align:center;">
+        <form action="/index" method="POST" enctype="multipart/form-data" style="margin-top: 20px;">
+           <label for="file-upload" style="disply:inline-block; padding:15px; background-color: black; color: white; text-align:center; border-radius:10px; cursor: pointer; margin-right: 10px;" class="button w3-hover-purple">Choose your PDF File</label>
+           <input type="file" id="file-upload" name="filename" style="display: none;" onchange="document.getElementById('file-name').innerHTML=this.files[0].name"/>
+           <button type="submit" value="Upload" style="disply:inline-block; padding:12px; background-color: black; color: white; text-align:center; border-radius:10px; cursor: pointer; margin-left: 10px;" class="button w3-hover-purple">Upload the File</button>
+        </form>
+        <p id="file-name"></p>
+    </div>
+    
+</body>
+</html>
+

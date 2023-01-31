@@ -1,0 +1,10 @@
+extends layout 
+include mixins/question_form
+
+block content 
+    for questions in allquestions 
+        +question(questions)
+        br
+        hr
+    .quiz_bt
+        button(type="submit") Submit

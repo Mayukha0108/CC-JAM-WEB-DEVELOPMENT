@@ -1,0 +1,20 @@
+mixin question(ques)
+    
+    .questions_f
+        .quiz_box
+            .question
+                p=`${ques.question}`
+            
+            .options
+                input(type="radio" id="op1" class="op1")
+                label(for="op1")= `${ques.option1}`
+                br
+                input(type="radio" id="op2" class="op2")
+                label(for="op2")= `${ques.option2}`
+                br
+                input(type="radio" id="op3" class="op3")
+                label(for="op3")= `${ques.option3}`
+                br
+                input(type="radio" id="op4" class="op4")
+                label(for="op4")= `${ques.option4}`
+                br

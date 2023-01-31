@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+    h1=title
+    form(action="/admin" method="POST")
+        .admin
+            .email
+                label(for="email" class="form_email") Email: 
+                input(type="email" class="form_email" id="formemail" name="email")
+            br
+            .password
+                label(for="password" class="form_password") Password: 
+                input(type="password" class="form_password" id="formpassword" name="password") 
+            br
+            button(type='submit') Submit

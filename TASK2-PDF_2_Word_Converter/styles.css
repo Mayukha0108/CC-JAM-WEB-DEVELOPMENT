@@ -1,0 +1,11 @@
+.header {
+    background-color: #2ecc71; /* Green background color */
+    color: white; /* White text color */
+    text-align: center; /* Center-aligned text */
+    padding: 1em; /* Padding around the text */
+  }
+  /* CSS for the header text */
+  .header h1 {
+    margin: 0; /* Remove margins */
+    font-size: 3em; /* Large font size */
+  }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width, initial-scale=1">
+        <title>Analyse the emotion</title>
+        <link rel="stylesheet" href="static/styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+
+<body style="background-color: #ed0e64; color:#fbfcca">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark py-3" id="navbar">
+        <a class="navbar-brand" href="index" style="margin-left: 20px; font-size:25px;" >FeelFinder</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link scrollto" href="index" style="font-size:17px;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollto navbar-nav mr-auto" href="predict" style="font-size:17px;">Analyse the emotion</a>
+                </li>
+            </ul>
+        </div>   
+    </nav>
+   
+</header>
+
+<body>
+
+ 
+ <div text-align="center" >
+	
+    <!-- Get input for predict the cancer -->
+    <center>
+  <form action="/submit" method="post">
+      <h2 style="margin-top: 120px; margin-bottom: 40px; font-size:40px"> Enter the sentiment: </h2>
+
+      <table align="center">
+
+        <tr>
+          <td text-align="left"><input type="text" name="sentiment" required="required" value="{{ sentiment }}" /></td>
+        </tr>
+
+      </table>
+
+      <div class="button_cont" align-text="center" style="margin-top: 30px; margin-bottom: 20px;">
+        <button type="submit" class="button"><strong>Analyse!</strong></button></a>
+    </div>
+
+    </form>
+
+    </center>
+   
+   <div>
+       <center>
+        <h2 style="padding-bottom: 40px; padding-top: 25px; font-size:25px;">{{ p }}</h2>
+       </center> 
+   </div>
+</div>
+
+
+<div class="w3-container w3-sand" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center" style="padding-bottom:15px;">CONTACT</h3>
+    <p class="w3-center w3-large">Any Queries? Contact us! <p>
+    <div style="margin-top:30px" class="w3-center">
+      <p><b>Phone :</b> +91 77383 76930</div></p>
+      <p class="w3-center"><b>Write to us :</b> mayukha108@gmail.com</p>
+      <br>
+    </div>
+  </div>
+
+<footer class="w3-center w3-black w3-padding-64">
+<a href="index" class="w3-button w3-light-grey w3-center">To the top</a>
+</footer>
+
+
+</body>
+</html>
